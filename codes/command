@@ -1,0 +1,2 @@
+g++ -g -O2 -static -std=gnu++11 codes.cc
+time ./a.out < sample_codes.in > sample_codes.out

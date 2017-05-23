@@ -1,0 +1,2 @@
+g++ -g -O2 -static -std=gnu++11 coast.cc
+time ./a.out < coast-sample-1.in > coast-sample-1.out

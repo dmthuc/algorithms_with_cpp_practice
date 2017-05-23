@@ -1,0 +1,2 @@
+g++ -g -O2 -static -std=gnu++11 pizza.cc
+time ./a.out < sample.in > sample.out
