@@ -1,0 +1,2 @@
+g++ -g -O2 -static -std=gnu++11 Point.cpp Matrix.cpp Cost_map.cpp Mincost_calculation.cc shovelling.cc
+time ./a.out < shovelling-1.in > shovelling-1.out
