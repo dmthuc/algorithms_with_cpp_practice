@@ -21,6 +21,7 @@ struct Point{
 const bool operator==(const Point a, const Point b);
 ostream& operator<<(ostream & os, const Point a);
 ostream& operator<<(ostream & os, const vector<vector<Point>> &a);
+ostream& operator<<(ostream & os, const vector<Point> &a);
 ostream& operator<<(ostream & os, const vector<vector<int>>& a);
 
 #endif

@@ -35,13 +35,15 @@ Cost_map& Cost_map::calculation_cost_map()
     vector<Point> same_cost_cp;
     int current_cost = 0;
     same_cost.push_back(start_point);
-    vector<Point> adjs = matrix->find_traversable_adjacent_cell(start_point);
-    for( auto adj : adjs) {
-        if (matrix->is_cell_clear(adj)) {
-            preceded_map[adj.y][adj.x] = start_point; 
-            cost_map[adj.y][adj.x] = current_cost;
-            same_cost.push_back(adj);
-            handle_zero_cost_cell(adj, same_cost, current_cost);
+    {
+        vector<Point> adjs = matrix->find_traversable_adjacent_cell(start_point);
+        for( auto adj : adjs) {
+            if (matrix->is_cell_clear(adj)) {
+                preceded_map[adj.y][adj.x] = start_point; 
+                cost_map[adj.y][adj.x] = current_cost;
+                same_cost.push_back(adj);
+                handle_zero_cost_cell(adj, same_cost, current_cost);
+            }
         }
     }
     ++current_cost;

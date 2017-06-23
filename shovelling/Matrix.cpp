@@ -58,6 +58,12 @@ vector<Point> Matrix::find_traversable_adjacent_cell(Point p) const
 {
     vector<Point> adjs;
     vector<Point> traversable_adjs;
+    #if 0
+    if ((p.y >= num_of_row) && (p.y <0) &&(p.x >= num_of_col) && (p.x <0)) 
+    {
+        throw 101;
+    }
+    #endif
     if( (p.x +1) < num_of_col ) adjs.push_back(Point{p.x+1,p.y});
     if( (p.x -1) >= 0 ) adjs.push_back(Point{p.x-1,p.y});
     if( (p.y +1) < num_of_row ) adjs.push_back(Point{p.x,p.y+1});

@@ -58,6 +58,12 @@ public:
     }
     bool is_cell_clear(Point p) const
     {
+        #if 0
+        if ((p.y >= num_of_row) && (p.y <0) &&(p.x >= num_of_col) && (p.x <0)) 
+        {
+            throw 100;
+        }
+        #endif
         switch (mat[p.y][p.x]) {
             case '.':
             case 'A':

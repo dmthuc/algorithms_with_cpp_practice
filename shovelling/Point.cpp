@@ -34,3 +34,11 @@ ostream& operator<<(ostream & os, const vector<vector<Point>> &a)
 }
 
 
+ostream& operator<<(ostream & os, const vector<Point> &a)
+{
+    for (auto& b:a) {
+        os<<b<<" ";
+    }
+    os<<endl;
+    return os;
+}

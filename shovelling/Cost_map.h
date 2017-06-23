@@ -47,8 +47,5 @@ private:
     vector<vector<int>> cost_map;
     vector<vector<Point>> preceded_map;
 };
-int minimum_val(vector<vector<int>> cost_map);
-vector<Point> find_same_cost(int current_cost);
-
 #endif
 

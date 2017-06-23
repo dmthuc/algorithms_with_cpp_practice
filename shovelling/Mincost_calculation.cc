@@ -36,7 +36,7 @@ Mincost_calculation& Mincost_calculation::calculation_cost_map()
             }
         }
     }
-    same_cost.insert(same_cost.end(), same_cost.begin(), same_cost.end());
+    same_cost.insert(same_cost.end(), same_cost_tmp.begin(), same_cost_tmp.end());
     ++current_cost;
     //cerr<<cost_map;
 #if 1
